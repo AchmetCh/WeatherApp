@@ -3,6 +3,7 @@
 ## Overview
 
 This Weather Application provides real-time weather updates and displays a map with the current weather conditions using the OpenWeatherMap API and OpenLayers. The app is built with HTML, CSS, and JavaScript, offering a user-friendly and interactive experience.
+![Weather App Screenshot](screenshot.jpg)
 
 ## Features
 
