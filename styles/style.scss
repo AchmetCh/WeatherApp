@@ -1,0 +1,196 @@
+@import "colors";
+
+
+body {
+  background-image: url(./animate.gif);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+ 
+  display: grid;
+  // background-color: $background;
+  .container {
+    display: grid;
+    place-self: center;
+    width: 40%;
+    justify-content: center;
+  }
+  h1 {
+    place-self: center;
+    color: $white;
+  }
+  .daysForecast {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+    .nextDayBox {
+      background-color: $secondColor;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 120px;
+      color: $whiteColor;
+      border: 1px solid white;
+      margin: 15px;
+      text-align: center;
+      border: none;
+      .miniIconTemp {
+       display: flex;
+        .smallicon {
+          width: 50px;
+      }
+    }
+    }
+  }
+  header {
+    background-color: $secondColor;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8px 20px 8px;
+    margin-bottom: 5px;
+    .search {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      color: $whiteColor;
+      border-radius: 10px;
+      margin: 0px 20px 0px 20px;
+      padding-right: 10px;
+      #inpSearch {
+        font-size: 18px;
+        border-radius: 25px;
+      }
+      .material-symbols-outlined {
+        font-size: 30px;
+      }
+      .searchButton:hover{
+        cursor: pointer;
+      }
+    }
+    button {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      border-radius: 25px;
+      border: none;
+      color: $secondColor;
+      font-weight: bold;
+      background-color: $button;
+      padding: 10px 10px 10px 10px;
+      font-size: 14px;
+      .material-symbols-outlined {
+        font-size: 30px;
+      }
+    }
+    button:hover {
+      cursor: pointer;
+    }
+  }
+
+  main {
+    display: grid;
+    .weatherAndMap {
+      background-color: $secondColor;
+      border-radius: 20px;
+      padding: 25px 10px 25px 10px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      color: #2e3030;
+      justify-items: center;
+      justify-content: space-around;
+      color: $whiteColor;
+      padding-bottom: 3%;
+      .weatherInfo {
+        .time {
+          font-size: 20px;
+        }
+
+        .weatherMain {
+          font-size: 36px;
+        }
+        .imgTemp {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          .image {
+            width: 200px;
+            height: auto;
+          }
+          .temp {
+            font-size: 38px;
+            font-weight: bold;
+          }
+        }
+       
+        .desc {
+          font-size: 28px;
+        }
+      }
+    }
+    .map {
+      height: 400px;
+      width: 200px;
+      .city {
+        font-size: 18px;
+      }
+    }
+  }
+  footer {
+    place-self: center;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+
+    .bottomBox {
+      background-color: $secondColor;
+      border-radius: 20px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
+      width: 200px;
+      height: 150px;
+      color: $whiteColor;
+      border: 1px solid white;
+      margin: 25px;
+      text-align: center;
+      border: none;
+      .boxTemp {
+        font-size: 24px;
+        align-self: center;
+        justify-self: end;
+        text-wrap: nowrap;
+      }
+      .boxTempSmall {
+        font-size: 16px;
+        align-self: center;
+        justify-self: end;
+      }
+    }
+    .material-symbols-outlined {
+      font-size: 48px;
+      font-variation-settings: "FILL" 5, "wght" 400, "GRAD" 0, "opsz" 24;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+ body {
+  main {
+    .map {
+      width: 200px;
+      height: 300px;
+    }
+  }
+ footer {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+ }
+}
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/css/ol.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/build/ol.js" defer></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Weather App</h1>
+        <div id="google_translate_element"></div>
+        <header>
+            <button id="button"><span class="material-symbols-outlined"><span class="notranslate">location_on</span></span>The Weather in my
+                Location Now</button>
+            <div class="search">
+                <input type="text" id="inpSearch" placeholder="Search by City name">
+                <span class="material-symbols-outlined searchButton"><span class="notranslate">frame_inspect</span></span>
+            </div>
+        </header>
+        <div class="daysForecast">
+            <div class="nextDayBox">
+                <h3 class="next1h3"></h3>
+                <div class="miniIconTemp">
+                    <img class="smallIcon1 smallicon" alt="">
+                    <p class="minitemp1"></p>
+                </div>
+                <p class="next1p"></p>
+            </div>
+            <div class="nextDayBox">
+                <h3 class="next2h3"></h3>
+                <div class="miniIconTemp">
+                    <img class="smallIcon2 smallicon" alt="">
+                    <p class="minitemp2"></p>
+                </div>
+                
+                <p class="next2p"></p>
+            </div>
+            <div class="nextDayBox">
+                <h3 class="next3h3"></h3>
+                <div class="miniIconTemp">
+                    <img class="smallIcon3 smallicon" alt="">
+                    <p class="minitemp3"></p>
+                </div>
+                
+                <p class="next3p"></p>
+            </div>
+        </div>
+        <main>
+            <div class="weatherAndMap">
+                <div class="weatherInfo">
+                    <h2>Current Weather</h2>
+                    <p class="time"></p>
+                    <h3 class="weatherMain"></h3>
+                    <div class="imgTemp">
+                        <img class="image" alt="">
+                        <p class="temp"></p>
+                    </div>
+                   
+                    <p class="desc"></p>
+                </div>
+                <div class="map">
+                    <p class="city"></p>
+                    <div id="map" class="map"></div>
+                    <p class="population"></p>
+                </div>
+
+            </div>
+
+        </main>
+        <footer>
+            <div class="bottomBox"><span class="material-symbols-outlined"><span class="notranslate">thermometer_add</span></span><span class="tempMax boxTemp"></span> Temp Max </div>
+            <div class="bottomBox"><span class="material-symbols-outlined"><span class="notranslate">thermometer_loss</span></span><span class="tempMin boxTemp"></span> Temp Min </div>
+            <div class="bottomBox"><span class="material-symbols-outlined"><span class="notranslate">humidity_mid</span> </span> <span class="humidity boxTemp"></span> Humidity</div>
+            <div class="bottomBox"><span class="material-symbols-outlined"><span class="notranslate">hot_tub</span></span><span class="feelsLike boxTemp"></span>Feels Like</div>
+            <div class="bottomBox"><span class="material-symbols-outlined"><span class="notranslate">clear_day</span></span><span class="sunrise boxTempSmall"></span>Sunrise</div>
+            <div class="bottomBox"><span class="material-symbols-outlined"><span class="notranslate">brightness_4</span></span> <span class="sunset boxTempSmall"></span> Sunset</div>
+        </footer>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

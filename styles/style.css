@@ -1,0 +1,178 @@
+body {
+  background-image: url(./animate.gif);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+body .container {
+  display: grid;
+  place-self: center;
+  width: 40%;
+  justify-content: center;
+}
+body h1 {
+  place-self: center;
+  color: white;
+}
+body .daysForecast {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+body .daysForecast .nextDayBox {
+  background-color: #a5a5b3;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 120px;
+  color: #2e3030;
+  border: 1px solid white;
+  margin: 15px;
+  text-align: center;
+  border: none;
+}
+body .daysForecast .nextDayBox .miniIconTemp {
+  display: flex;
+}
+body .daysForecast .nextDayBox .miniIconTemp .smallicon {
+  width: 50px;
+}
+body header {
+  background-color: #a5a5b3;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 8px 20px 8px;
+  margin-bottom: 5px;
+}
+body header .search {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: #2e3030;
+  border-radius: 10px;
+  margin: 0px 20px 0px 20px;
+  padding-right: 10px;
+}
+body header .search #inpSearch {
+  font-size: 18px;
+  border-radius: 25px;
+}
+body header .search .material-symbols-outlined {
+  font-size: 30px;
+}
+body header .search .searchButton:hover {
+  cursor: pointer;
+}
+body header button {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-radius: 25px;
+  border: none;
+  color: #a5a5b3;
+  font-weight: bold;
+  background-color: #0057ff;
+  padding: 10px 10px 10px 10px;
+  font-size: 14px;
+}
+body header button .material-symbols-outlined {
+  font-size: 30px;
+}
+body header button:hover {
+  cursor: pointer;
+}
+body main {
+  display: grid;
+}
+body main .weatherAndMap {
+  background-color: #a5a5b3;
+  border-radius: 20px;
+  padding: 25px 10px 25px 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: #2e3030;
+  justify-items: center;
+  justify-content: space-around;
+  color: #2e3030;
+  padding-bottom: 3%;
+}
+body main .weatherAndMap .weatherInfo .time {
+  font-size: 20px;
+}
+body main .weatherAndMap .weatherInfo .weatherMain {
+  font-size: 36px;
+}
+body main .weatherAndMap .weatherInfo .imgTemp {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body main .weatherAndMap .weatherInfo .imgTemp .image {
+  width: 200px;
+  height: auto;
+}
+body main .weatherAndMap .weatherInfo .imgTemp .temp {
+  font-size: 38px;
+  font-weight: bold;
+}
+body main .weatherAndMap .weatherInfo .desc {
+  font-size: 28px;
+}
+body main .map {
+  height: 400px;
+  width: 200px;
+}
+body main .map .city {
+  font-size: 18px;
+}
+body footer {
+  place-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+body footer .bottomBox {
+  background-color: #a5a5b3;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  width: 200px;
+  height: 150px;
+  color: #2e3030;
+  border: 1px solid white;
+  margin: 25px;
+  text-align: center;
+  border: none;
+}
+body footer .bottomBox .boxTemp {
+  font-size: 24px;
+  align-self: center;
+  justify-self: end;
+  text-wrap: nowrap;
+}
+body footer .bottomBox .boxTempSmall {
+  font-size: 16px;
+  align-self: center;
+  justify-self: end;
+}
+body footer .material-symbols-outlined {
+  font-size: 48px;
+  font-variation-settings: "FILL" 5, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+@media only screen and (max-width: 600px) {
+  body main .map {
+    width: 200px;
+    height: 300px;
+  }
+  body footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */
